@@ -1,4 +1,4 @@
-# おへやのきろくモニター
+# さぼてんきけい
 
 ESP32 と 温湿度・気圧センサー（AHT20 + BMP280）、0.96インチOLEDで、
 **温度・湿度・気圧**を日本語で表示する、はじめての電子工作のサンプルプログラムです。
@@ -6,7 +6,7 @@ ESP32 と 温湿度・気圧センサー（AHT20 + BMP280）、0.96インチOLED
 - 説明書（4つのステップ）: [docs/manual.md](docs/manual.md)
 - おうちの人へ（パソコンの準備・AIの使いかた・困ったとき）: [docs/for-parents.md](docs/for-parents.md)
 - Lチカ（動作チェック用）: [sketches/blink/blink.ino](sketches/blink/blink.ino)
-- おへやのきろくモニター: [sketches/oheya-monitor/oheya-monitor.ino](sketches/oheya-monitor/oheya-monitor.ino)
+- さぼてんきけい: [sketches/sabotenkikei/sabotenkikei.ino](sketches/sabotenkikei/sabotenkikei.ino)
 
 ## 使うライブラリ（Arduino IDE のライブラリマネージャから）
 - U8g2（olikraus）
