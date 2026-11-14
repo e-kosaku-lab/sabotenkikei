@@ -79,7 +79,15 @@
 ### 5. 書き込みのやりかた（ステップ2から毎回）
 
 1. `sabotenkikei.ino` を開く。<https://github.com/e-kosaku-lab/sabotenkikei/blob/main/sketches/sabotenkikei/sabotenkikei.ino>
-   - GitHubのページの場合: 「Download raw file」でダウンロードし、Arduino IDE の「ファイル」→「開く」で開く。【要確認】今のGitHubの画面のボタン名
+   - GitHubのページの下のほうに、「さぼてんきけい: sketches/sabotenkikei/sabotenkikei.ino」と書いてあります。その青い文字（リンク）をクリックします。
+
+     ![GitHubのページ。赤い枠で囲んだリンクをクリックします。](images/gh-1-repo.png)
+
+   - 開いたページの、右はしの「…」（3つの点のマーク）をクリックして、「Download」を選びます。プログラム（スケッチ）が、ダウンロードされます。
+
+     ![sabotenkikei.ino のページ。右はしの「…」から「Download」を選びます。](images/gh-2-file.png)
+
+   - ダウンロードしたファイルをダブルクリックすると、Arduino IDE（ソフト）が起動します。起動しないときは、Arduino IDE の「ファイル」→「開く」で開きます。
    - 「スケッチ用のフォルダを作りますか？」と聞かれたら「OK」。
 2. 「ツール」→「ボード」が「ESP32 Dev Module」、「ポート」が選ばれていることを確認。
 3. 画面の左上の **→（書き込み）ボタン** を押す。
