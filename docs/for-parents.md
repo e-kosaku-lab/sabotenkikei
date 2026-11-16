@@ -39,7 +39,7 @@
 
 ### 用意するもの
 
-- パソコン（Windows または Mac）【要確認】Chromebook は Arduino IDE が使えないため対象外と書くか
+- パソコン（Windows または Mac）
 - インターネット
 - USBの差し込み口がない場合は、変換アダプター
 
@@ -184,8 +184,6 @@ void loop() {
    - ダウンロード: https://www.silabs.com/developer-tools/usb-to-uart-bridge-vcp-drivers
    - 入れたあと、パソコンを再起動する。
 5. 書き込み中に「Connecting……」で止まったら、BOOTボタンを押しながらもう一度書き込む。
-
-【要確認】ドライバーのURLが今も正しいか。ボードのチップが本当にCP2102か（届いた実物で確認）。
 
 ### ライブラリが見つからない（赤い文字で「No such file」と出る）
 
