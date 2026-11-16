@@ -6,13 +6,14 @@
 //   1. U8g2                (olikraus)
 //   2. Adafruit BMP280 Library  ※「依存ライブラリも入れますか？」→「すべてインストール」
 //
-// ボード設定: ツール → ボード → ESP32 Arduino → 「ESP32 Dev Module」
+// ボード設定: ツール → ボード → esp32 → 「ESP32 Dev Module」
 //
 // 配線（I2C）:
-//   ESP32 3V3     → センサー VCC / OLED VCC
+//   ESP32 3V3     → センサー VDD / OLED VDD
 //   ESP32 GND     → センサー GND / OLED GND
 //   ESP32 GPIO21  → センサー SDA / OLED SDA
-//   ESP32 GPIO22  → センサー SCL / OLED SCL
+//   ESP32 GPIO22  → センサー SCL / OLED SCK
+//   （基板の文字は、センサーが「VDD・SDA・GND・SCL」、OLEDが「GND・VDD・SCK・SDA」）
 //
 // 画面のようす（128 x 64 ドット）:
 //   左がわ … 上から「温度」「湿度」「気圧」、いちばん下に「かいてき」などの言葉
