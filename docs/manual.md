@@ -373,7 +373,8 @@ AIには、**何を・どうしたいか** を、くわしく言うほど伝わ�
 
 ## おわりに・お問い合わせ
 
-- わからないことは、購入したメルカリの取引メッセージでご連絡ください。
+- 取引のこと（キャンセル・届かない・こわれていた・返品など）は、購入したメルカリの取引メッセージでご連絡ください。
+- 使いかたのご質問や、ごようぼうは、[お問い合わせフォーム](https://docs.google.com/forms/d/e/1FAIpQLSc39AIeyI7oMJ9VZCnJQgaJmFzdg29E1F64umHbpRTYRCRmow/viewform) へどうぞ。
 - 説明書とプログラムは、更新することがあります。最新版はこちら: <https://github.com/e-kosaku-lab/sabotenkikei>
 
 ---
