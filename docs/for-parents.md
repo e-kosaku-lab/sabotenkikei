@@ -180,8 +180,9 @@ void loop() {
 1. **USBケーブルが「充電だけ」のものではないか。** 付属のケーブルは通信できますが、ほかのケーブルに替えたときは、通信できるケーブルか確認する。
 2. ボードに明かりがつくか。つかないときは、USBのさしこみをやりなおす。
 3. 別のUSB差し込み口で試す。
-4. ドライバー（パソコンがボードを見つけるためのソフト）を入れる。このキットのボードは「CP2102」というチップを使っている想定です。
-   - ダウンロード: https://www.silabs.com/developer-tools/usb-to-uart-bridge-vcp-drivers
+4. ドライバー（パソコンがボードを見つけるためのソフト）を入れる。このキットのボードは「CH340C」というUSBのチップを使っています。多くのパソコンでは自動で使えますが、ポートが出ないときは、ドライバーを入れます。
+   - Windows用（CH340／WCH）: https://www.wch-ic.com/downloads/CH341SER_EXE.html
+   - Mac用（CH340／WCH）: https://www.wch-ic.com/downloads/CH341SER_MAC_ZIP.html
    - 入れたあと、パソコンを再起動する。
 5. 書き込み中に「Connecting……」で止まったら、BOOTボタンを押しながらもう一度書き込む。
 
