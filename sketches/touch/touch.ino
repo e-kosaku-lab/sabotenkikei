@@ -415,7 +415,7 @@ bool ahtRead(float &tempC, float &humi) {
 
 // ---- 気圧の きろく（1分に1回、3時間ぶん）----
 const int HIST_N = 180;
-const unsigned long HIST_MS = 60000;
+const unsigned long HIST_MS = 60000;  // 気圧をきろくする間かく（60000 = 1分）。ためすときは 1000 にすると、1分で「1じかん分」たまる
 float histP[HIST_N];
 int histHead = 0;   // つぎに かく ばしょ
 int histN = 0;      // たまった かず
@@ -544,7 +544,7 @@ void drawGame(unsigned long now, int frame) {
     snprintf(line, sizeof(line), "%dびょうゲーム", GAME_SEC);
     display.drawUTF8(0, 13, line);
     display.drawUTF8(0, 29, "ちょんと スタート");
-    display.drawUTF8(0, 45, "ながく さわると おわり");
+    display.drawUTF8(0, 45, "ながおしで おわり");
     display.drawUTF8(0, 62, "ワイヤー1=1P 2=2P");
   } else if (gState == G_READY) {
     display.drawUTF8(0, 29, "よーい…");
@@ -552,7 +552,7 @@ void drawGame(unsigned long now, int frame) {
     // おどる さぼてんきくん（3ばいの おおきさ）
     int phase = (now / 125) % 4;
     static const int dxs[4] = {-5, 0, 5, 0};
-    static const int dys[4] = {0, -3, 0, -3};
+    static const int dys[4] = {0, 2, 0, 2};  // 下の文字（y=51〜）に かぶらない 高さ
     const char *const *m;
     switch (phase) {
       case 0: m = MARK_KAITEKI; break;
@@ -560,7 +560,7 @@ void drawGame(unsigned long now, int frame) {
       case 2: m = MARK_KAITEKI2; break;
       default: m = MARK_TERE2; break;
     }
-    drawMarkS(m, 40 + dxs[phase], 8 + dys[phase], 3);
+    drawMarkS(m, 40 + dxs[phase], 0 + dys[phase], 3);  // 16x16 の 3ばい = 48ドット。y=0〜50
     if (now - gT0 < 700) display.drawUTF8(0, 62, "ドン!");
     else display.drawUTF8(0, 62, "こころで かぞえてね");
   } else {
@@ -579,7 +579,7 @@ void drawGame(unsigned long now, int frame) {
     if (gWinner == 0) display.drawUTF8(0, 45, "1Pの かち!");
     else if (gWinner == 1) display.drawUTF8(0, 45, "2Pの かち!");
     else display.drawUTF8(0, 45, "ひきわけ");
-    snprintf(line, sizeof(line), "%dびょうに ちかい ほう", GAME_SEC);
+    snprintf(line, sizeof(line), "%dびょう ちかい ほう", GAME_SEC);
     display.drawUTF8(0, 62, line);
   }
 }
