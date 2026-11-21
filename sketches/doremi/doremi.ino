@@ -26,7 +26,7 @@
 //   アンプの 出力 → スピーカー（＋と −）
 //   さわる場所（ワイヤーの、もう一方の先は、どこにも つながない）:
 //     GPIO4  → ド     GPIO13 → レ     GPIO14 → ミ
-//     GPIO27 → ファ   GPIO32 → ソ     GPIO33 → ラ
+//     GPIO27 → ファ   GPIO33 → ソ     GPIO32 → ラ
 //
 // つかいかた:
 //   ワイヤーの先を さわると、その音が 鳴ります。さぼてんきくんは、音の 場所へ 行って おどります。
@@ -421,8 +421,8 @@ TouchPad pads[NPADS] = {
   {13, 0, false, 0, 0, 0, false, false, false, false, 0},
   {14, 0, false, 0, 0, 0, false, false, false, false, 0},
   {27, 0, false, 0, 0, 0, false, false, false, false, 0},
-  {32, 0, false, 0, 0, 0, false, false, false, false, 0},
-  {33, 0, false, 0, 0, 0, false, false, false, false, 0},
+  {33, 0, false, 0, 0, 0, false, false, false, false, 0},   // ソ
+  {32, 0, false, 0, 0, 0, false, false, false, false, 0},   // ラ
 };
 unsigned long lastPress[NPADS] = {0, 0, 0, 0, 0, 0};
 
